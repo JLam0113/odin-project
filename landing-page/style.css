@@ -6,14 +6,14 @@ body {
 
 .header {
   height: 72px;
-  background: darkmagenta;
+  background: #1F2937;
   color: white;
 }
 
 .footer {
   height: 72px;
-  background: #eee;
-  color: darkmagenta;
+  background: #1F2937;
+  color: white;
 }
 
 .sidebar {
@@ -22,24 +22,16 @@ body {
   box-sizing: border-box;
 }
 
-.card {
-  border: 1px solid #eee;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.06);
-  border-radius: 4px;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
-.header {
-  font-size: 32px;
-  font-weight: 900;
+.header,
+.content {
   display: flex;
   align-items: center;
-  padding: 0 16px;
+  padding: 0 10vw;
+  justify-content: space-between;
+  color: #F9FAF8;
+  font-size: 24px;
+  background: #1F2937;
+  gap: 20px;
 }
 
 .footer {
@@ -48,21 +40,8 @@ body {
   justify-content: center;
 }
 
-.content {
-  display: flex;
-  height: 100vh;
-}
-
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 50px;
-}
-
-.card {
-  width: 300px;
-  padding: 32px;
+.logo {
+  width: 50px;
 }
 
 .sidebar {
@@ -73,14 +52,65 @@ ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
+  display: flex;
+  align-items: center;
 }
 
 li {
   padding: 16px;
+  line-height: 12px;
 }
 
-a {
+.hero-text {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+a,
+.subtext {
   text-decoration: none;
-  color: #fff;
-  font-size: 24px;
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+.left {
+  flex: 1;
+}
+
+.image {
+  width: 40%;
+}
+
+button {
+  background-color: #3882F6;
+  padding: 8px 20px;
+  color: #FFF;
+  border: none;
+  border-radius: 5px;
+}
+
+.content2 {
+  text-align: center;
+  padding: 0 10vw;
+  padding-bottom: 100px;
+}
+
+.cards-container {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card {
+  width: 150px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bolder;
+  color: #1F2937;
 }
