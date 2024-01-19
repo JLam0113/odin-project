@@ -1,12 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script type="text/javascript" src="rps.js"></script>
 </head>
+
 <body>
-    
+    <div>
+        <button id="rock" onclick="game('rock')">Rock</button>
+        <button id="paper" onclick="game('paper')">Paper</button>
+        <button id="scissors" onclick="game('scissors')">Scissors</button>
+    </div>
+    <div>
+        <p id="selection"></p>
+        <p id="gameResult"></p>
+        <p id="playerScore"></p>
+        <p id="computerScore"></p>
+        <p id="winner"></p>
+    </div>
 </body>
+<script>
+    const rockBtn = document.querySelector('#rock');
+    const paperBtn = document.querySelector('#paper');
+    const scissorsBtn = document.querySelector('#scissors');
+</script>
+
 </html>
